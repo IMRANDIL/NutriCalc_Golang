@@ -45,8 +45,8 @@ func GetNutritionalScore(n NutritionalData, st ScoreType) NutritionalScore {
 		fruitPoints := n.Fruits.GetPoints()
 		fibrePoints := n.Fibre.GetPoints()
 
-		negative = Energy + Sugars + SaturatedFattyAcids + Sodium
-		positive = fibrePoints + Protein + fruitPoints
+		negative = n.Energy.GetPoints() + n.Sugars.GetPoints() + n.SaturatedFattyAcids.GetPoints() + n.Sodium.GetPoints()
+		positive = fibrePoints + n.Protein.GetPoints() + fruitPoints
 	}
 
 	return NutritionalScore{
