@@ -6,12 +6,12 @@ package main
 func main() {
 ns := GetNutritionalScore(
 	NutritionalData{
-		Energy:,
-		Sugars:,
-		SaturatedFattyAcid:,
-		Sodium:,
-		Fruits:,
-		Fibre:,
-		Protein:,
+		Energy:EnergyFromcal(),
+		Sugars: SugarGram(),
+		SaturatedFattyAcids: SaturatedFattyAcids(),
+		Sodium: SodiumMilligram(),
+		Fruits: FruitsPercent(),
+		Fibre: FibreGram(),
+		Protein: ProteinGram(),
 	},Food)
 }
