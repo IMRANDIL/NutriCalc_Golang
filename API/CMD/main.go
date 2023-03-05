@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 
 
 
@@ -14,4 +16,5 @@ ns := GetNutritionalScore(
 		Fibre: FibreGram(),
 		Protein: ProteinGram(),
 	},Food)
+	fmt.Printf("Nutritional Score:%d\n", ns.Value)
 }
